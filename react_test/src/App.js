@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 class App extends Component {
   render() {
+    const greeting = 'Hi';
     return (
-      <div>
-            <h1>Hello React</h1>
-      </div>
+      <React.Fragment>
+        <h1 className="foo">{greeting} React</h1>
+        <label htmlFor="bar">bar</label>
+        <input type="text" onChange={() => {console.log('I Clicked')}}/>
+      </React.Fragment>
     );
   }
 }
